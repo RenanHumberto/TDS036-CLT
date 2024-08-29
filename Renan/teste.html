@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    
+    <!---->
+    <p  class="destaque">Meu gatinho é muito mal humorado</p>
+    <!---->
+    <p>Meu gatinho é muito mal humorado</p>
+    <!--Aninhando elementos: você pode colocar elementos dentro de outros elementos
+     isso é chamado de aninhamento, por exemplo, se quisermos falar que nosso
+    gatinho é MUITO mal-humorado, podemos envolver a palavra "muito" em um elemnto
+  <strong> também pode ser usado a tag <b>, o que significa que a palavra vai ser marcada-->
+    <p> Meu gatinho é <strong>muito</strong> mal-humorado</p>
+    <p> Meu gatinho é <b>muito</b> mal-humorado</p>
+  <!--ELEMENTOS VAZIOS: alguns elementos não possuem conteúdo e são chamados de
+  elementos vazios. Considere esse elemento <img>-->
+  <img src="Link da imagen" all="Minha imagem de teste" /> 
+  <!--Ele contém dois atributos, mas não há tag </img> de fechamento, e não há
+  conteúdo interno. Isso acontece porque um elemento de imagem não envolve conteúdo
+  para ser feitos em si mesmo. Usa proposta é incorporar uma imageem na página HTMl
+no lugar em que o código aparece-->
+
+<!--ENTIDADES HTML
+alguns caracteres são reservados do HTML e se você colocá-los no meio do seu conteúdo 
+pode ser ter um comportamento inesperado. Se você usar os sinais de (<) ou (>) no texto
+por exemplo, seu navagador pode entender como uma tag. Nestes casos você pode utilizar 
+as entidades para exibi-los corretamente.
+RESULTADO------------DESCRIÇÃO---------------------NOME DA ENTIDADE
+
+                         espaço                           &nbsp;
+<                        menor que                         &lt;
+>                        maior que                         &gt;
+&                        ampersand                         &amp;
+""                       aspas duplas                      &quot;
+''                       aspas unica                       &apos;
+¢                        centavo dolar                     &cent;
+£                        peso                              &pound;
+C                        copyright                         &copy;
+R                        marca registrada                  &reg;
+-->
+  
+<!-- ANATOMIA DE UM DOC HTML 
+Todo doc HTML deve seguir uma estrutura básica para que ele funcione bem:
+
+<!DOCTYPE html>
+<html lang="pt-bt">
+<html>
+  <head>
+    <meta charset="utf-8"
+    <title> Minha Página de teste</title>
+  </head>
+<body>
+    <p> Meu gatinho é <strong>muito</strong> mal-humorado</p>
+    <img src="Link da imagen" all="Minha imagem de teste" />
+</body>
+</html>
+
+Toda html deve ter a estrutura inicial seguida.
+-->
+
+<!--GRUPOS E FUNÇÕES
+Elementos HTML possuem certa flexibildiade em seu uso e nos permitem trabalhar com bastante
+liberdade. Pasar disso,existem alguns padrões para as funções desses elementos para
+garantir o bom funcionamento da página.
+
+- Elementos mandatórios que marcam as principáis áreas da página
+    <html><body>
+- Elementos de metadados, trazendo informações adicionais sobre a página
+    <base> <head> <style> <script>
+- Elementos de sessão que auamentam a organização da página
+    <header> <main> <footer> <section>
+- Elementos de conteúdo linear
+    <a> <strong> <s> <code> <br>
+- Elementos de imagem e multimidia
+    <audio> <img> <map> <video>
+  - Elementos de incorporação
+    <iframe> <embed> <objec> <source>
+-->
+<!-- UM EXEMPLO PRÁTICO-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Exemplo de html</title>
+</head>
+<body style="background-color: blue;">
+  <header>
+    <h1>Exemplo de html</h1>
+      <nav>
+        <ul>
+          <li><a href="#"Página Inicial></a></li>
+          <li><a href="#"Sobre></a></li>
+          <li><a href="#"Contato></a></li>
+       </ul>
+     </nav>
+  </hearder>
+
+  <main>
+    <section>
+      <h2>Sobre nós</h2>
+      <p>Bem-vindo ao nosso site! Somos uma empresa dedicada a fornecer soluções de exemplo</p>
+    </section>
+
+    <section>
+      <h2>Produtos</h2>
+      <ul>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p> &copy; 2023 Empressa Exemplo. Todos os direitos reservados.</p>
+  </footer>
+  </header>
+
+</body>
+</html>
+
+  <!--TAGS FUNCIONAIS
+  
+  Imagens <img>
+    <img src="Link da imagen" all="Minha imagem de teste" />
+  como dissemos antes, isso incopora uma imagen na nossa página na posição que aparece.
+  isso é feito pelo atributo src (source),que contém o caminho para nosso aquivo de imagem. INcluimos
+  também um atributo alt (alternative). Neste atributo, você especifica um texto descritivo
+  para usuários que não podem ver a imagem.
+
+  Cabeçalhos <h1>-<h6>
+    <h1>Meu título principal</h1>
+    <h2>Meu título de alto nível</h2>
+    <h3>Meu subtítulo</h3>
+    <h4>Meu segundo subtítulo</h4>
+  Os elementos de cabeçãlhos permitem especificar que certas partes do seu conteúdo são títulos
+  ou subtítulos. Da mesma forma que um livro tem o título principal e os capítulos possuem títulos e subtítulos,
+  um documento HTML tamém tem.HTML contém 6 níveis de título.
+  
+  Parágrafos <p>
+  como explicado anteriormente, os elemntos <p> são para conter parágrafos de texto.
+    <p>Este é um parágrafo simples<p>
+  Você pode fazer quebra de linhas manuais usando a tag <br/>
+    <Este é um parágrafo simples<br/>
+    aqui vem a segunda linha</p>
+  
+  Listas não ordenadas <ul><lil>
+  Listas não ordenadas são listas onde a ordem dos itens não importa, como uma lista de compras, por exemplo
+  essas são envolvidas em um elemento <ul>.
+    <p>O projeto é composto por:</p>
+    <ul>
+      <li>Desenvolvedores</li>
+      <li<Designers</li>
+    </ul>
+  
+  Listas ordenadas <ol><li>
+    Listas ordenadas são listas onde a ordem dos itens importa, como uma receita
+    <p>Como resolver seus problemas:</p>
+    <ol>
+      <li>Abra o navegador</li>
+      <li<Vá em configs</li>
+    </ol>
+  
+  links <a>
+  Links são muitos importantes, para adicionar um, precisamos usar o elemento simples <a>
+  que significa "âncora"
+    <a href="https://www.cesar.org.br"target="_blank">CESAR: pessoas impulsionando inovação.</a>
+
+  Tabelas <table>
+  O elemento <table> representa dados tabulares, isto é, informações apresentadas em uma tabela
+  bidimensional composta por linhas e colunas de células contendo dados.
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2"> Cabeçalho</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Primeira coluna</td>
+          <td>Segunda coluna</td>
+        </tr>
+      </tbody>
+    </table>
+
+  Formulário <form>
+  O <form> representa uma seção de um doc que contém controles interativos que permitem ao usuário submeter
+  informação a um determinado servidor web. 
+    <form action="method"="get">
+      <label for="get-name">Name:</label>
+      <input id="get-name" type="text"name="name"/>
+      <input type="submit"value="save"/>
+    </form>  
+  É possível utilziar as pseudo-classes de CSS  :valid e :invalid para aplicar estilo a um elemento <form>
+
+  Entrada de dados <input>
+  O elemento HTMl <input> é usado para criar controles interativos para fomulários baseados na web
+  para receber dados do usário. A semântica de um <input> varia consideralmente dependendo do
+  valor de seu atributo type.
+    <input type="text" id="firt_name"name=="first_name"
+  -->
+  
+  <!--TIPOS DE ENTRADA DE DADOS <input type>
+  O atributo type define o tipo de controle a ser exibido, o tipo padrão é text, se este atributo
+  não for especificado. Os valroes possíveis são:
+    
+    button                      passaword
+    checkbox                      radio
+    color                         range
+    date                          reset
+    datetime-local                search
+    email                         submit
+    file                           tel
+    hidden                        text
+    image                         time 
+    month                          url
+    number                        week
+
+  Elemento de divisão <div>  
+  O elemento de divisão <div> é um container genérico para conteúdo, que de certa forma não 
+  representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id).
+  Ele deve ser utilizado somente quanto não tiver outro elemento de semântica.
+    <div id="page- content">
+     <p> Qualquer tipo de de conteúdo</p>
+    </div>  
+  -->
+
+
+  <!-- TAGS SEMÂNTICAS 
+Além das tags de formatação e estruturação, o HTML também possui algumas tags que tem por objetivo descrever
+o significado do conteúdo presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers
+e outras engines que processam essa informação
+
+Essas tags são chamadas de tags semânticas e as principais dessas são:
+
+<header>
+<section>
+<article>
+<nav>
+<aside>
+<main>
+<figure>
+<footer>
+<cite>
+<time>
+
+<hr> quebra com uma linha 
+  icons8.com/icons
+  -->
+  
+ <!-- CSS -- são seletores que permitem aplicar estilos a grupos específicos de elemtentos HTML 
+  definindo cores, tamanhos, espaçamentos, posicionamento entre elementos etc.-->
+  
+  <!-- ANATOMIA DE UMA REGRA CSS
+  Uma regra CSS tem a seguinte composição:
+
+  p{
+    color: red;
+  }
+
+  Como funciona?
+    -Seletores 
+      Estabelece quais elementos da página devem receber o estilo especificado.
+    -Propriedades e valores
+      Regras são composta por pares de chave (propriedade) e valor (configuração desejada para aquela propriedade)
+  -->
+
+  <!--TIPOS DE USO DO CSS (INLINE, INTERNO E EXTERNO)
+    CSS INLINE
+      vamos dar uma olhada num exemplo. Aqui, nós adcionamos um CSS inline para as atags <body>, <p> e <h1>:-->
+
+        
+  
+     <!--<body style="background-color: black;">
+          <h1 style="color: white;padding: : 30px;">Este é o título da página</h1>      PADDING da espaçamento
+          <p style="color: white;"> Este é o nosso parágrafo</p>
+        </body>
+
+    CSS INTERNO
+      Requer que você adicione a tags <style> na seção <head> do seu doc
+      Este estilo de CSS é um método efetivo de estilizar uma única página. COntudo, usar esse estilo em múltiplas
+      páginas pode consumir muito tempo, já que você precisa defirnir as regras CSS para cada página do site.
+
+       
+      <head>
+        <style>
+          body{ background-color: black;
+          }
+          h1{
+            color: white;
+            padding: 30px;
+          }
+        </style> 
+      </head>
+      <body>
+        <h1> Este é o título da pagina</h1>
+        <p style="color: white;">Este é o nosso parágrafo.</p>
+      </body>  
+
+    CSS EXTERNO   
+      Com o CSS externo, você vai linkar as páginas da internet com um arquivo .css externo, que você pode criar usando qualquer
+      editor de  texto
+      Este tipo de CSS é o método mais eficiente, especialmente se você está estilizando um site grande.Ao editar
+      um arquivo .css, você pode modificar um site inteiro de uma só vez.
+
+      head>
+      <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+      <h1>Este é o meu título da página</h1>
+      <p>Este é o nosso parágrafo</p>
+    </body>
+  </head>
+
+  <p é um parágrafo simples <br/>                         
+  aqui vem a segunda linha</p>
+    
+
+SELETORES CSS
+  São padrões de regras que incluem ou excluem elementos HTML de estilização. Os principais são:
+    -Universal
+    -Por tipo
+    -Por classe ou ID 
+    -HIerarquia
+    -Grupo ou aninhados
+
+      UNIVERSAL
+        O seletor universal CSS aplica estilos a elementos d e qualquer tipo por todo o documento HTML
+          *{
+              /*Lista de estilos CSS*/
+          }
+                                                    útil para: Reset de estilos, estilos globais, definição de padrões, depuração
+
+      POR TIPO
+          Seleciona elementos com base no tipo de tag HTML que podem ser tags padrão  ou customizadas
+            div{
+                /*Lista de estilos CSS*/
+            }
+            span{
+                /*Lista de  estilos CSS*/
+            }
+            a{
+                /*Lista de estilos CSS*/
+            }
+                                                      Útil para: tipografia global; estilizações basicas, personalização de componentes globais
+
+      POR CLASSE OU ID
+        Permitem que você selecionae elementos com base em sua relação de aninhamento dentro da estrutura HTML
+            .minha-classe{
+                /*Lista de estilos CSS*/
+            }
+            #meu-id{
+                /*Lista de estilos CSs*/
+            }
+                                                      Util para (seletor de classe): Reutilziar estilos;Etilização modular; Estilização condicional
+                                                      Útil para(seletor id): identificação unica; navegação ou ancoragem
+
+      POR HIERARQUIA
+        Perimetem que você selecionae elementos com base em sua relação com outros elementos dentro da estrutura HTML
+            div p{
+                /*Lista de estilos CSS*/
+            }
+            ul>lil{
+                /*Lista de estilos CSS*/
+            }
+                                                      Útil para seletor de classe: Estilização de elementos aninhados; estilização de grandes estruturas(listas, tabelas,etc)
+          
+      GRUPOS OU ANINHADOS
+        Grupos de seletores permitem aplicar estilos a vários elementos diferentes usando o mesmo conjunto de regras. Já seletores aninhados combia classes, elementos e IDs
+        em um único seletor para aplicar estilos específicos a elementos específicos.
+            h1,h2,h3{
+                /*Lista de estilos CSS*/
+            }
+            div.destaque{
+                /*Lista de estilos CSS*/
+            }
+                                                        Útil para seletor de classe: Reutilização de estilos; elementos específicos dentor da hierarquia; evitar estilização indesejada
+  -->                                           
+
+  
+
+
+</html>

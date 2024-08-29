@@ -1,0 +1,69 @@
+programa 
+{
+	funcao inicio()
+	{
+	/*	inteiro numero
+		escreva("escreva um número: ")
+		leia (numero)
+		escreva ("o dobro deste número é ", numero*2)
+		
+		
+	}
+}
+*/
+
+/*
+		inteiro numero, antecessor, sucessor
+		
+		escreva ("digite um número: ")
+		leia (numero)
+		antecessor= numero - 1
+		sucessor= numero + 1
+		escreva("sucessor= ", sucessor)
+		escreva("\nantecessor: ", antecessor)
+	}
+}
+*/
+
+
+/*
+		cadeia frase
+		escreva("digite uma frase: ")
+		leia(frase)
+		escreva("'",frase, "'")
+		
+	}
+}
+
+*/ 
+
+/*
+		inteiro variavelA, variavelB, auxiliar
+		escreva("informe um valor para a variável: ")
+		leia(variavelA)
+		escreva("informe o segundo valor para variável: ")
+		leia(variavelB)
+		escreva("Valor antigo de A é = ",variavelA)
+		escreva("\nValor antigo de B é = ", variavelB)
+		auxiliar = variavelA
+		variavelA = variavelB
+		variavelB = auxiliar
+		escreva("\nValor atual de A é = ",variavelA)
+		escreva("\nValor atual de B é = ",variavelB)
+	}
+	
+}
+*/
+
+/*
+		cadeia nome
+		escreva("digite seu nome: ")
+		leia(nome)
+		se (nome == "Marley" ou nome == "marley")
+		escreva("nome igual.")
+		senao 
+		escreva("nome diferente.")
+	}
+}
+*/
+
